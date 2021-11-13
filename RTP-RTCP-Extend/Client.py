@@ -175,7 +175,7 @@ class Client:
 	def updateMovie(self, imageFile):
 		"""Update the image file as video frame in the GUI."""
 		photo = ImageTk.PhotoImage(Image.open(imageFile))
-		self.label.configure(image = photo, height=288) 
+		self.label.configure(image = photo, height=288)
 		self.label.image = photo
 
 	def updateLabel1(self, totalBytes, counterLost, lostRate, dataRate):
